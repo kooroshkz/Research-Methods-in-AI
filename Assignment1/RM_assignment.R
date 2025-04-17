@@ -27,7 +27,7 @@ for (i_test in 1:n_tests){
   p_value <- model_summary$coefficients[2,4]
   
   # QRP: Rounding p-values down
-  if (p_value > 0.05) {
+  if (p_value > 0.05 && p_value < 0.07) {
     p_value <- 0.05
   }
   
