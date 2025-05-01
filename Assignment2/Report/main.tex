@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{wasysym}
+\usepackage{mathabx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[numbers,square,super,sort&compress]{natbib} %For a bibliography
+\usepackage{cprotect} %For verbatim code in title...
+\usepackage{geometry} % Required to change the page size to A4
+\usepackage{graphicx,xcolor} %colors and images
+\usepackage{subfigure} %useful for multiple figures in one float
+\usepackage{amsmath, amssymb} %Mathematical symbols
+\usepackage[exponent-product=\cdot, per-mode=symbol]{siunitx} %Useful for physical quantities with units
+\usepackage[notrig]{physics} %contains all kinds of useful abbreviations for braket, derivatives, etc.
+\usepackage{enumitem,fancyhdr,lastpage,parskip} %For item lists, for headers and footers and no indents
+\usepackage[numbers,square,super,sort&compress]{natbib} %For a bibliography
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings} %Listings package is for scripts
+\usepackage{cprotect} %For verbatim code in title...
+
+% CODE ENVIRONMENT
+\definecolor{mygreen}{rgb}{0,0.6,0} \definecolor{mygray}{rgb}{0.5,0.5,0.5} \definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{basicstyle=\footnotesize, breakatwhitespace=false, breaklines=true, commentstyle=\color{mygreen}, extendedchars=true, frame=single, keepspaces=true, keywordstyle=\color{blue}, language=Python, numbers=left,                    numbersep=5pt, numberstyle=\tiny\color{mygray},  rulecolor=\color{black}, showspaces=false, showstringspaces=false, showtabs=false, stringstyle=\color{mymauve}, tabsize=3, title=\lstname, captionpos=b}
+%See for comments for instance here: https://tex.stackexchange.com/questions/83882/how-to-highlight-python-syntax-in-latex-listings-lstinputlistings-command
+
+\textheight=23.5cm
+\textwidth=16cm
+\oddsidemargin=0cm
+\evensidemargin=0cm
+\topmargin=-1cm
+\parskip=0.2cm
+\parindent=0.0cm
+\linespread{1.2}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\center
+\begin{figure}[H] \center{\includegraphics[width=0.2\linewidth]{LeidenSeal}} \end{figure}
+\textsc{\LARGE Leiden University}\\[1.5cm]
+
+
+\HRule \\[0.9cm]
+{ \huge \bfseries Assignment 2}\\[0.1cm] % Title of your document
+\HRule \\[1.5cm]
+
+\textsc{Author:}\\[0.3cm]
+\textsc{\Large Dean Kuurstra (s3343715)}\\[0.5cm]
+\textsc{\Large Diego Cañas Jimenez (s3856216)}\\[0.5cm]
+\textsc{\Large Koorosh Komeili Zadeh (s3893995)}\\[0.5cm]
+\textsc{\Large Lani Hampel (s3977412)}\\[0.5cm]
+
+\large April 18, 2025\\
+A Research Methods in Artificial Intelligence report\\
+% Date, change the \today to a set date if you want to be precise
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\newpage
+\section{Introduction (Dean)}
+Introduction here
+
+\subsection{Summary of the Paper (Dean)}
+
+Summary of the paper here
+\subsection{Strengths}
+
+The study shows several strong points. Like smart comparisons of ChatGPT against both children alongside adults which points to where exactly AI stands in the spectrum of communicators. Additionally, by using reference-game paradigm from Mayn and Demberg, they built proven methods while adding new, fresh data from ChatGPT trials. The post-test questionnaire lets researchers get deeper on how participants think about ChatGPT’s abilities. Finally, clear graphs help readers quickly understand the experiment and result.
+
+\subsection{Weaknesses}
+
+On the downsides, the sample is quite small and limited to 40 people, so the result might not generalize well. The limited experience of participants with ChatGPT and AI models can lead to bias on their judgments and perception. The paper didn’t fully explain ChatGPT’s restrictions, so many listeners misunderstood the task making mismatched ideas. Lastly, relying mostly on reused materials means the study could have been stronger by collecting decent, paired data specifically designed for AI versus human comparisons.
+
+\subsection{Artifacts \& Data (or whatever -> lani)}
+\subsection{Methodology Clarity}
+
+The paper pointed to each step in detail, from how participants saw the three-shape displays, which four messages were available, how sliders summed to 100 points, and how trials were randomized. It also shows screenshots of both the visual and textual versions and references the original Mayn & Demberg paradigm. With those examples and the link to the preregistered design, another researcher can rebuild the experiment exactly.
+
+\subsection{Replicability vs. Reproducibility}
+
+\textbf{Replicability (same data \& code):} Yes. All analysis scripts, the exact prompts given to ChatGPT, and the processed data are on GitHub, so you can rerun the original models and get the same statistics.
+
+\textbf{Reproducibility (new run of the experiment):} Not fully. Because ChatGPT’s outputs can vary over time or versions, you can’t guarantee the same messags. That not in authors’ control.
+
+\subsection{Conclusion \& Next Steps}
+
+\section{Work distribution}
+    \begin{itemize}
+        \item[] \textbf{Dean Kuurstra}: Introduction (methods), QRP introduction, Initial simulation (R programming), Sequential testing with optional stopping QRP, Conclusion, Report formatting
+        \item[] \textbf{Diego Cañas Jimenez}:
+        \item[] \textbf{Koorosh Komeili Zadeh}: Hypothesis section development, P-value rounding QRP implementation, comparison and analysis of various Questionable Research Practices, Visualizations,  Github/Overleaf pipeline integration, LaTeX report conversion
+        \item[] \textbf{Lani Hampel}:
+        \\
+    \end{itemize}
+
+\bibliographystyle{ieeetr} 
+\bibliography{bibliography}
+
+\end{document}
