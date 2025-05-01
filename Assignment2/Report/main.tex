@@ -51,7 +51,7 @@
 
 
 \HRule \\[0.9cm]
-{ \huge \bfseries Assignment 2}\\[0.1cm] % Title of your document
+{ \huge \bfseries Assignment 2AB}\\[0.1cm] % Title of your document
 \HRule \\[1.5cm]
 
 \textsc{Author:}\\[0.3cm]
@@ -60,7 +60,7 @@
 \textsc{\Large Koorosh Komeili Zadeh (s3893995)}\\[0.5cm]
 \textsc{\Large Lani Hampel (s3977412)}\\[0.5cm]
 
-\large April 18, 2025\\
+\large May 1, 2025\\
 A Research Methods in Artificial Intelligence report\\
 % Date, change the \today to a set date if you want to be precise
 
@@ -69,41 +69,47 @@ A Research Methods in Artificial Intelligence report\\
 \end{titlepage}
 
 \newpage
-\section{Introduction (Dean)}
-Introduction here
+\section{Introduction}
+In this report, we will evaluate its strengths and weaknesses of the paper “Capable but not cooperative? Perceptions of ChatGPT as a pragmatic speaker” (Mayn, A., Loy, J., \& Demberg, V., 2024) \cite{pragmatic_gpt}. Among this we will talk about the papers data, analyses, scientific artifacts, reproducibility and replicability.
 
-\subsection{Summary of the Paper (Dean)}
 
-Summary of the paper here
-\subsection{Strengths}
+\section{Summary}
+Mayn, Loy, \& Demberg's paper explores how English speakers perceive GPT-3.5’s pragmatic abilities using a reference game that is developed by Mayn and Dem-berg (2024). They also use data from this previous paper on how adults and 4 year old children's pragmatic abilities are perceived differently by other adults. In the game, participants see three objects (e.g., a red square, red circle, and blue triangle), and ChatGPT selects a message (e.g., “red,” “circle”) from four options to help the participant identify a target object. Participants then distribute 100 points across the three objects based on how likely they believe ChatGPT’s message refers to each.
 
-The study shows several strong points. Like smart comparisons of ChatGPT against both children alongside adults which points to where exactly AI stands in the spectrum of communicators. Additionally, by using reference-game paradigm from Mayn and Demberg, they built proven methods while adding new, fresh data from ChatGPT trials. The post-test questionnaire lets researchers get deeper on how participants think about ChatGPT’s abilities. Finally, clear graphs help readers quickly understand the experiment and result.
+Each participant completed 24 trials (16 control, 8 critical). Critical trials involved ambiguous messages that could describe more than one object. After the trials, participants were asked why they provided specific answers. They were then provided a questionnaire that asked how much experience with ChatGPT they have and how much knowledge of Machine Learning and Natural Language Processing they have on a scale of 1-5. Participants were then asked how they think ChatGPT picks a message to send to the participant, and then explained the optimal speaker reasoning after they had answered. After this, it was asked if participants think ChatGPT could perform the correct reasoning to choose the right message to remain unambiguous, also on a scale from 1-5. Notably, the same authors also performed research with adult and child speakers with the same premise, where participants often responded much more distributedly with children, which they perceived as less pragmatic.
 
-\subsection{Weaknesses}
 
-On the downsides, the sample is quite small and limited to 40 people, so the result might not generalize well. The limited experience of participants with ChatGPT and AI models can lead to bias on their judgments and perception. The paper didn’t fully explain ChatGPT’s restrictions, so many listeners misunderstood the task making mismatched ideas. Lastly, relying mostly on reused materials means the study could have been stronger by collecting decent, paired data specifically designed for AI versus human comparisons.
+The study found that ChatGPT is perceived as less competent than adults and possibly slightly more competent than children, though not clearly. Despite high questionnaire ratings, participant behavior suggested lower perceived competence, likely due to a lack of understanding of ChatGPT’s reasoning until it was explained post-task.
 
-\subsection{Artifacts \& Data (or whatever -> lani)}
-\subsection{Methodology Clarity}
 
-The paper pointed to each step in detail, from how participants saw the three-shape displays, which four messages were available, how sliders summed to 100 points, and how trials were randomized. It also shows screenshots of both the visual and textual versions and references the original Mayn & Demberg paradigm. With those examples and the link to the preregistered design, another researcher can rebuild the experiment exactly.
+\section{Strengths \& Weaknesses}
+In general, the study shows several strong points. Among these are smart comparisons of ChatGPT against both children alongside adults, by using reference-game paradigm from Mayn and Demberg. This points to where exactly AI stands in the spectrum of communicators. Researchers also reported the exact p-values without being influenced by rounding and kept the number of participants to 40 even though some data was not reliable. Finally, clear graphs help readers quickly understand the experiment and result.
 
-\subsection{Replicability vs. Reproducibility}
+On the downsides, the sample is quite small and limited to 40 people, so the result might not generalize well. Additionally they decided to discard data on their own, due to perceived random responses. This could lead to manipulation of data. The limited experience of participants with ChatGPT and AI models can lead to bias on their judgments and perception. Lastly, relying mostly on reused materials means the study could have been stronger by collecting decent, paired data specifically designed for AI versus human comparisons.
 
-\textbf{Replicability (same data \& code):} Yes. All analysis scripts, the exact prompts given to ChatGPT, and the processed data are on GitHub, so you can rerun the original models and get the same statistics.
 
-\textbf{Reproducibility (new run of the experiment):} Not fully. Because ChatGPT’s outputs can vary over time or versions, you can’t guarantee the same messags. That not in authors’ control.
+\section{Artifacts \& Data}
+The main experimental structure used is a replication of the reference game paradigm by Mayn and Demberg (2024) applied to ChatGPT. In the original experiment, participants were asked to interpret messages by adult and child speakers. The results of the adult- and child-speaker experiment are also reused in this paper. 
 
-\subsection{Conclusion \& Next Steps}
+In the altered version of the experiment described in this paper, the participants interpret messages sent by ChatGPT. This is the new application in the study which is used to evaluate the research questions. Thus, some new data is delivered.
 
-\section{Work distribution}
-    \begin{itemize}
-        \item[] \textbf{Dean Kuurstra}: Introduction (methods), QRP introduction, Initial simulation (R programming), Sequential testing with optional stopping QRP, Conclusion, Report formatting
-        \item[] \textbf{Diego Cañas Jimenez}:
-        \item[] \textbf{Koorosh Komeili Zadeh}: Hypothesis section development, P-value rounding QRP implementation, comparison and analysis of various Questionable Research Practices, Visualizations,  Github/Overleaf pipeline integration, LaTeX report conversion
-        \item[] \textbf{Lani Hampel}:
-        \\
-    \end{itemize}
+
+\section{Methodology \& Analyses}
+More specifically, the analyses used in the paper are done very well and appropriately describe the trends found in the data. For instance, the use of figures was consistently relevant to the study and the comparison of the different groups under the different types of questions. Additionally, the authors used a linear mixed-effect model which is appropriate given the paired samples which partake in the experiment. 
+
+The methodology in the paper, while very well described, has some flaws. For one, the experimental structure led to the particiapnts perspective of Chat GPT's competence to change after the final explanation provided by the researchers towards the end of the study. Thus, a mismatch between explicit and implicit reports by the participants was observed. To avoid this participants should be made more aware of how to solve the exercise and Chat GPT's full habilities. 
+
+This study was a continuation of a previous study. This study accomodates the terminologies used in its prior to be consistent in labeling, this benefited the study. Additionally, the fact that the same exact methodology was used for both studies ensures they can be compared. 
+
+\section{Methodology Clarity}
+The paper pointed to each step in detail, from how participants saw the three-shape displays, which four messages were available, how sliders summed to 100 points, and how trials were randomized. It also shows screenshots of both the visual and textual versions and references the original Mayn \& Demberg paradigm. With those examples and the link to the preregistered design, another researcher can rebuild the experiment exactly
+
+\section{Replicability \& Reproducibility}
+As it was just explained, this study is replicable, as the methodology is cleat and the exact prompts given to ChatGPT, and code used is on GitHub, so you can rerun the original setup. Nevertheless it is not fully possible to reproduce the results. Because ChatGPT’s outputs can vary, you can’t guarantee the same messages.
+
+
+\section{Conclusion \& Next Steps}
+In conclusion, this analysis highlighted both the strengths and limitations of the study on perceptions of ChatGPT’s pragmatic abilities. While the use of a well-established experimental paradigm and clear comparative structure, issues with task complexity, participant understanding, and limited sample diversity revealed areas for improvement. Exploring these aspects provided a balanced view of the study’s contributions and constraints.
 
 \bibliographystyle{ieeetr} 
 \bibliography{bibliography}
