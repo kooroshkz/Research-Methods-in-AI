@@ -14,8 +14,8 @@
 \usepackage{subfigure} %useful for multiple figures in one float
 \usepackage{amsmath, amssymb} %Mathematical symbols
 \usepackage[exponent-product=\cdot, per-mode=symbol]{siunitx} %Useful for physical quantities with units
-\usepackage[notrig]{physics} %contains all kinds of useful abbreviations for braket, derivatives, etc.
-\usepackage{enumitem,fancyhdr,lastpage,parskip} %For item lists, for headers and footers and no indents
+\usepackage[notrig]{physics} %contains all kinds of useful abbreviations for brackets, derivatives, etc.
+\usepackage{enumitem,fancyhdr,lastpage,parskip} %For item lists, for headers and footers, and no indents
 \usepackage[numbers,square,super,sort&compress]{natbib} %For a bibliography
 \usepackage[hidelinks]{hyperref}
 \usepackage{listings} %Listings package is for scripts
@@ -51,7 +51,7 @@
 
 
 \HRule \\[0.9cm]
-{ \huge \bfseries Assignment 2AB}\\[0.1cm] % Title of your document
+{ \huge \bfseries Assignment 2 A-B-C}\\[0.1cm] % Title of your document
 \HRule \\[1.5cm]
 
 \textsc{Author:}\\[0.3cm]
@@ -70,13 +70,13 @@ A Research Methods in Artificial Intelligence report\\
 
 \newpage
 \section{Introduction}
-In this report, we will evaluate the strengths and weaknesses of the paper "Capable but not cooperative? Perceptions of ChatGPT as a pragmatic speaker” (Mayn, A., Loy, J., \& Demberg, V., 2024) \cite{pragmatic_gpt}. Among this we will talk about the papers data, analyses, scientific artifacts, reproducibility and replicability.
+In this report, we will evaluate the strengths and weaknesses of the paper "Capable but not cooperative? Perceptions of ChatGPT as a pragmatic speaker” (Mayn, A., Loy, J., \& Demberg, V., 2024) \cite{pragmatic_gpt}. Among this, we will talk about the papers' data, analyses, scientific artifacts, reproducibility, and replicability.
 
 
 \section{Summary}
-Mayn, Loy, \& Demberg's paper explores how English speakers perceive GPT-3.5’s pragmatic abilities using a reference game that is developed by Mayn and Dem-berg (2024). They also use data from this previous paper on how adults and 4 year old children's pragmatic abilities are perceived differently by other adults. In the game, participants see three objects (e.g., a red square, red circle, and blue triangle), and participants were told that ChatGPT had selected one of four pre-generated labels (e.g., “red,” “circle”) to refer to the target object. Participants then distribute 100 points across the three objects based on how likely they believe ChatGPT’s message refers to each.
+Mayn, Loy, \& Demberg's paper explores how English speakers perceive GPT-3.5’s pragmatic abilities using a reference game that is developed by Mayn and Dem-berg (2024). They also compare those results to data on how adult listeners judged adults versus 4-year-olds in the same task. In the game, participants saw three objects (e.g. red square, red circle, blue triangle) and were told that ChatGPT had picked one of four pre-generated labels (e.g. “red,” “circle”) to refer to the target object. Participants then distribute 100 points across the three objects based on how likely they believe ChatGPT’s message refers to each.
 
-Each participant completed 24 trials (16 control, 8 critical). Critical trials involved ambiguous messages that could describe more than one object. After the trials, participants were asked why they provided specific answers. They were then provided a questionnaire that asked how much experience with ChatGPT they have and how much knowledge of Machine Learning and Natural Language Processing they have on a scale of 1-5. Participants were then asked to imagine how ChatGPT might choose which pre-generated message to send, and then explained the optimal speaker reasoning after they had answered. After this, it was asked if participants think ChatGPT could perform the correct reasoning to choose the right message to remain unambiguous, also on a scale from 1-5. Notably, the same authors also performed research with adult and child speakers with the same premise, where participants often responded much more distributedly with children, which they perceived as less pragmatic.
+Each participant completed 24 trials (16 control, 8 critical). Critical trials involved ambiguous messages that could describe more than one object. After the trials, participants were asked why they provided specific answers. They were then provided a questionnaire that asked how much experience with ChatGPT they have and how much knowledge of Machine Learning and Natural Language Processing they have on a scale of 1-5. Participants were then asked to imagine how ChatGPT might choose which pre-generated message to send, and then explained the optimal speaker reasoning after they had answered. At the end, participants rated (1–5) how likely they thought ChatGPT could perform that reasoning. Also, the same authors also performed research with adult and child speakers with the same premise, where participants often responded much more distributively with children, which they perceived as less pragmatic.
 
 
 The study found that ChatGPT is perceived as less competent than adults and possibly slightly more competent than children, though not clearly. Despite high questionnaire ratings, participant behavior suggested lower perceived competence, likely due to a lack of understanding of ChatGPT’s reasoning until it was explained post-task.
@@ -91,22 +91,51 @@ On the downsides, the sample is quite small and limited to 40 people, so the res
 \section{Artifacts \& Data}
 The main experimental structure used is a replication of the reference game paradigm by Mayn and Demberg (2024) applied to ChatGPT. In the original experiment, participants were asked to interpret messages by adult and child speakers. The results of the adult- and child-speaker experiment are also reused in this paper. 
 
-In the altered version of the experiment described in this paper, the participants interpret messages sent by ChatGPT. This is the new application in the study which is used to evaluate the research questions. Thus, some new data is delivered.
+In the altered version of the experiment described in this paper, the participants interpret messages sent by ChatGPT. This is the new application in the study, which is used to evaluate the research questions. Thus, some new data is delivered.
 
 
 \section{Methodology \& Analyses}
-More specifically, the analyses used in the paper are done very well and appropriately describe the trends found in the data. For instance, the use of figures was consistently relevant to the study and the comparison of the different groups under the different types of questions. Additionally, the authors used a linear mixed-effect model which is appropriate given the paired samples which partake in the experiment. 
+More specifically, the analyses used in the paper are done very well and appropriately describe the trends found in the data. For instance, the use of figures was consistently relevant to the study, and the comparison of the different groups under the different types of questions. Additionally, the authors used a linear mixed-effect model, which is appropriate given the paired samples which partake in the experiment. 
 
-The methodology in the paper, while very well described, has some flaws. For one, the experimental structure led to the particiapnts perspective of Chat GPT's competence to change after the final explanation provided by the researchers towards the end of the study. Thus, a mismatch between explicit and implicit reports by the participants was observed. To avoid this participants should be made more aware of how to solve the exercise and Chat GPT's full habilities. 
+The methodology in the paper, while very well described, has some flaws. For one, the experimental structure led to the participants perspective of Chat GPT's competence to change after the final explanation provided by the researchers towards the end of the study. Thus, a mismatch between explicit and implicit reports by the participants was observed. To avoid this participants should be made more aware of how to solve the exercise and Chat GPT's full abilities. 
 
-This study was a continuation of a previous study. This study accomodates the terminologies used in its prior to be consistent in labeling, this benefited the study. Additionally, the fact that the same exact methodology was used for both studies ensures they can be compared. 
+This study was a continuation of a previous study. This study accommodates the terminologies used in its before be consistent in labeling, which benefited the study. Additionally, the fact that the same methodology was used for both studies ensures they can be compared. 
 
 \section{Methodology Clarity}
-The paper pointed to each step in detail, from how participants saw the three-shape displays, which four messages were available, how sliders summed to 100 points, and how trials were randomized. It also shows screenshots of both the visual and textual versions and references the original Mayn \& Demberg paradigm. With those examples and the link to the preregistered design, another researcher can rebuild the experiment exactly
+The paper pointed to each step in detail, from how participants saw the three-shape displays, which four messages were available, how sliders summed to 100 points, and how trials were randomized. It also shows screenshots of both the visual and textual versions and references the original Mayn \& Demberg paradigm. With those examples and the link to the preregistered design, another researcher can rebuild the experiment exactly.
 
 \section{Replicability \& Reproducibility}
-As it was just explained, this study is replicable, the exact stimuli, cover-story text, and analysis code are on GitHub, so you can rebuild the experiment. However, it isn’t fully reproducible in a live setting, since a real ChatGPT session might generate different wording than our fixed labels.
+As it was just explained, this study is replicable; the exact stimuli, cover-story text, and analysis code are on GitHub, so you can rebuild the experiment. However, it isn’t fully reproducible in a live setting, since a real ChatGPT session might generate different wording than our fixed labels.
 
+
+
+\section{Research Proposal}
+
+\subsection{Background / Context}
+
+Mayn et al. (2024) observed that participants rated ChatGPT’s pragmatic competence highly, despite interpreting its messages less cooperatively than human speakers. We extend this by examining how listener age shapes such perceptions. Participants from Baby Boomer, Gen X, Millennial, and Gen Z cohorts all play the same cooperative reference game from the original study (inferring which object ChatGPT’s description refers to) and then rate ChatGPT’s competence. We refine the design, mainly, by clarifying the problem's nature and how to solve it through different scenarios. By comparing performance and subjective ratings across age groups, we test whether younger listeners tend to draw stronger pragmatic inferences than older listeners. Different age groups could lead to different levels of pragmatic inferences as the type and amount of exposure and the understanding of ChatGPT may vary, leading to different levels of trust.
+
+\subsection{Research Question}
+How do different age groups perceive the pragmatic abilities of ChatGPT?
+
+
+\subsection{Contribution}
+Whilst research targeting differences in perceptions of ChatGPT has been done in the context of gender and education, there was no research found with a focus on different age groups. We hope to expand into this area of research by conducting further research into variables which influence perceptions on AI agents. 
+The paper by Mayn, Loy and Demberg uses the reference game with ChatGPT as the perceived speaker to uncover general perceptions of AI agents. In this altered version of the experiment, ChatGPT remains as the perceived speaker and the responses from different age groups are recorded and analyzed. The key difference lies in the age groups of the participants rather than the perceived speaker, in contrast to the analyzed paper which compared results from previous experiments with children and adults as the perceived speaker to their results with ChatGPT as the speaker. Thus, a new area is explored using a variation on the original study.
+
+
+\subsection{Methodology}
+
+In this experiment, we will attempt to find a relation between the age of participants and the perceived pragmatic capability of ChatGPT. We aim to do this by using the reference game setup. This involves giving the participant a digital game, where they are shown a setup, and given a message. The setup includes three objects, each of which have a color and a shape. Participants are then shown a message which they were told was provided by ChatGPT. The goal of this message is to convey which object is the target that the participant must pick out, and is picked from a set of possible instructions. An example of the objects and messages of a setup is: objects red circle, blue triangle and red square, with the messages red, green and square. 
+
+This game will include critical and control trials, with control trials having trivial or ambiguous solutions. Critical trials have possibly clear, but also possibly ambiguous instructions, where one instruction conveys only one object and the other can include both the target and another object. The provided message will be the unambiguous instruction.
+
+
+After each trial, participants are asked to assign points, out of a pool of 100 points, to each object depending on how confident they are that this is the target object, while under the impression ChatGPT picked the instruction. When participants are finished completing each trial, they are given a questionnaire where they answer, on a scale of 1-5, how much experience participant’s have using ChatGPT, and how much experience they have with Machine Learning and Natural Language Processing. Finally, participants are asked to provide an instruction, and provide the thought process a speaker may have when providing one. It is then explained to the participants what the thought process might be, where the speaker picks the message that is unambiguous and points to the target, rather than providing an ambiguous message pointing to the target. They are then asked whether they believe ChatGPT is capable of performing this kind of reasoning on a scale of 1-5.
+
+
+\subsection{Expected Results}
+In this study, we think younger people (ages 13–29) will give more points to the correct object than middle-aged (30–59) and older adults (60+). Kids and young adults will usually pick the best referent. We expect middle-aged adults will pick it more often, and older adults will pick it the least few times. On easy or fully ambiguous trials, all groups should score similarly. After the game, younger people’s ratings of ChatGPT’s skill will match how they played, but older adults may still say it’s very capable, although they used fewer clues. Statistical tests should show target scores falling as age increases.
 
 \section{Conclusion \& Next Steps}
 In conclusion, this analysis highlighted both the strengths and limitations of the study on perceptions of ChatGPT’s pragmatic abilities. While the use of a well-established experimental paradigm and clear comparative structure, issues with task complexity, participant understanding, and limited sample diversity revealed areas for improvement. Exploring these aspects provided a balanced view of the study’s contributions and constraints.
